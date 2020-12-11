@@ -1,0 +1,25 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs/blocks";
+
+import { Autocomplete } from '../components';
+
+<Meta title="Components/Autocomplete" component={Autocomplete} />
+
+# Autocomplete
+
+### How to use
+
+```jsx
+import { Autocomplete } from 'laboratoria-ui';
+```
+
+## Warning
+
+<Canvas>
+  <Story name="Asynchronous requests">
+    <Autocomplete
+      labelText="Dev Team"
+      optionList={data => Object.keys(data).map(key => data[key].item[0])}
+      request="https://country.register.gov.uk/records.json?page-size=5000"
+    />
+  </Story>
+</Canvas>
