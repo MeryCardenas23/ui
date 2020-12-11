@@ -13,6 +13,7 @@ export { default as SignUp } from './SignUp';
 export { default as SideBar } from './SideBar';
 export { default as PasswordRecovery } from './PasswordRecovery';
 export { default as Loader } from './Loader';
+export { default as Autocomplete } from './Autocomplete';
 export * from './SVG/flags';
 export * from './SVG/square-flags';
 export * from './SVG/icons';
