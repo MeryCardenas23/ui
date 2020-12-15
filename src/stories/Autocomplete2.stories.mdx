@@ -1,0 +1,22 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs/blocks";
+
+import { Autocomplete2 } from '../components';
+import loadOptions from './storybook-utils.js';
+
+<Meta title="Components/Autocomplete2" component={Autocomplete2} />
+
+# Autocomplete2
+
+### How to use
+
+```jsx
+import { Autocomplete2 } from 'laboratoria-ui';
+```
+
+## Asynchronous requests
+
+<Canvas>
+  <Story name="Asynchronous requests">
+    <Autocomplete2 loadOptions={loadOptions} placeholder="City"/>
+  </Story>
+</Canvas>
